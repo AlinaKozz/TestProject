@@ -2,7 +2,7 @@
     <div>
         <label>{{label}}</label>
 
-        <input type="date"
+        <input type="month"
                :name="name"
                :value="value"
                @input="$emit('input',$event.target.value)">
@@ -11,7 +11,7 @@
 
 <script>
     export default {
-        name: 'DateInput',
+        name: 'MonthInput',
         props: ['label', 'name', 'value']
     }
 </script>
